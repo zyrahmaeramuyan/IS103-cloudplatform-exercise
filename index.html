@@ -1,0 +1,37 @@
+<!DOCTYPE html> <htm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <!-- Distance: Kilometer ↔ Meter -->
+        <div class="converter-box">
+            <h3>Distance (km ↔ m)</h3>
+            <input type="number" id="kmInput" placeholder="Kilometers" oninput="convertKmToM()">
+            <span>=</span>
+            <input type="number" id="mInput" placeholder="Meters" oninput="convertMToKm()">
+        </div>
+        <!-- Weight: Kilogram ↔ Gram -->
+        <div class="converter-box">
+            <h3>Weight (kg ↔ g)</h3>
+            <input type="number" id="kgInput" placeholder="Kilograms" oninput="convertKgToG()">
+            <span>=</span>
+            <input type="number" id="gInput" placeholder="Grams" oninput="convertGToKg()">
+        </div>
+        <!-- Temperature: Celsius ↔ Fahrenheit -->
+        <div class="converter-box">
+            <h3>Temperature (°C ↔ °F)</h3>
+            <input type="number" id="cInput" placeholder="Celsius" oninput="convertCToF()">
+            <span>=</span>
+            <input type="number" id="fInput" placeholder="Fahrenheit" oninput="convertFToC()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
